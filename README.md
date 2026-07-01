@@ -1,11 +1,15 @@
-# Shorts Farm Uploader Legal Site
+# ClipFlow Studio public site
 
-Static GitHub Pages site for TikTok Developer app verification fields.
+Static public site for TikTok Developer review and URL verification.
 
-Expected public URLs after publishing to GitHub Pages:
+Use these fields in TikTok Developer Portal after publishing GitHub Pages:
 
-- `https://<github-user>.github.io/<repo>/terms.html`
-- `https://<github-user>.github.io/<repo>/privacy.html`
+- Website URL: `https://boo4kin.github.io/`
+- Terms of Service URL: `https://boo4kin.github.io/terms.html`
+- Privacy Policy URL: `https://boo4kin.github.io/privacy.html`
+- Redirect URI: `https://boo4kin.github.io/tiktok/callback/`
+- App icon: `app-icon-1024.png`
 
-Use `terms.html` for the TikTok **Terms of Service URL** field.
-Use `privacy.html` for the TikTok **Privacy Policy URL** field.
+The home page is intentionally an application-style workspace, not a private
+desktop-tool landing page. It shows the clip queue, preview, rights confirmation,
+TikTok connection, and publish controls needed for the review demo.

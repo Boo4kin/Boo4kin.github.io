@@ -3,25 +3,151 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Shorts Farm Uploader</title>
+    <meta
+      name="description"
+      content="ClipFlow Studio helps sports creators turn licensed long-form footage into short clips and publish selected videos to their own TikTok accounts."
+    >
+    <title>ClipFlow Studio</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <main class="page">
-      <section class="hero">
-        <p class="eyebrow">Private desktop publishing tool</p>
-        <h1>Shorts Farm Uploader</h1>
-        <p>
-          Shorts Farm Uploader is a private desktop tool used to prepare,
-          manage, and upload short-form video content to TikTok accounts
-          authorized by the user.
-        </p>
+    <header class="topbar">
+      <a class="brand" href="index.html" aria-label="ClipFlow Studio home">
+        <img src="app-icon-1024.png" alt="" width="36" height="36">
+        <span>ClipFlow Studio</span>
+      </a>
+      <nav aria-label="Primary">
+        <a href="#workflow">Workflow</a>
+        <a href="#publisher">Publisher</a>
+        <a href="terms.html">Terms</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="workspace" aria-labelledby="app-title">
+        <div class="panel sidebar">
+          <div class="user-pill">
+            <span class="avatar">CF</span>
+            <span>
+              <strong>Creator workspace</strong>
+              <small>Sports clips review</small>
+            </span>
+          </div>
+          <a class="nav-item active" href="#workflow">Clip queue</a>
+          <a class="nav-item" href="#publisher">Publishing</a>
+          <a class="nav-item" href="#rights">Rights checks</a>
+          <a class="nav-item" href="#contact">Support</a>
+        </div>
+
+        <section class="panel main-panel">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">AI-assisted clip preparation</p>
+              <h1 id="app-title">Review sports highlights before publishing</h1>
+            </div>
+            <button type="button">Connect TikTok</button>
+          </div>
+
+          <div class="clip-grid">
+            <article class="clip-card selected">
+              <div class="thumb pitch">
+                <span>00:17</span>
+              </div>
+              <h2>Late winner reaction</h2>
+              <p>Ready for creator review</p>
+            </article>
+            <article class="clip-card">
+              <div class="thumb replay">
+                <span>00:23</span>
+              </div>
+              <h2>Pressure build-up</h2>
+              <p>Caption draft saved</p>
+            </article>
+            <article class="clip-card">
+              <div class="thumb crowd">
+                <span>00:19</span>
+              </div>
+              <h2>Keeper save</h2>
+              <p>Needs rights confirmation</p>
+            </article>
+          </div>
+
+          <div class="editor" id="publisher">
+            <div class="phone-preview" aria-label="Video preview">
+              <div class="top-banner">MATCH MOMENT</div>
+              <div class="video-window"></div>
+              <div class="subtitle">The whole stadium knew what was coming.</div>
+              <div class="bottom-window"></div>
+            </div>
+
+            <form class="publish-form">
+              <label>
+                Caption
+                <textarea rows="5">Late drama, clean finish, instant reaction. #football #highlights #sports</textarea>
+              </label>
+              <label>
+                Visibility
+                <select>
+                  <option>Public after TikTok approval</option>
+                  <option>Private test post</option>
+                </select>
+              </label>
+              <label class="check">
+                <input type="checkbox" checked>
+                I confirm that I own or have licensed this footage.
+              </label>
+              <button type="button">Publish selected clip</button>
+            </form>
+          </div>
+        </section>
       </section>
 
-      <section class="links">
-        <a href="terms.html">Terms of Service</a>
-        <a href="privacy.html">Privacy Policy</a>
+      <section class="content-band" id="workflow">
+        <div>
+          <p class="eyebrow">Workflow</p>
+          <h2>From long footage to approved short posts</h2>
+        </div>
+        <div class="steps">
+          <article>
+            <strong>1. Upload owned footage</strong>
+            <p>Creators add match footage they own or have permission to use.</p>
+          </article>
+          <article>
+            <strong>2. Generate clips</strong>
+            <p>The workspace prepares vertical clips, captions, and metadata.</p>
+          </article>
+          <article>
+            <strong>3. Review and publish</strong>
+            <p>The creator checks each clip and explicitly starts TikTok publishing.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-band split" id="rights">
+        <div>
+          <p class="eyebrow">Responsible publishing</p>
+          <h2>Creators stay in control</h2>
+          <p>
+            ClipFlow Studio is for creators, clubs, editors, and sports media
+            teams publishing their own or licensed video content. The service
+            does not publish automatically without creator review.
+          </p>
+        </div>
+        <ul class="checks">
+          <li>Explicit TikTok authorization through Login Kit</li>
+          <li>Per-video rights confirmation before publishing</li>
+          <li>Editable captions, hashtags, and visibility settings</li>
+          <li>Clear publishing status after API submission</li>
+        </ul>
       </section>
     </main>
+
+    <footer id="contact">
+      <span>ClipFlow Studio</span>
+      <a href="terms.html">Terms of Service</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <span>Contact: support email listed in the TikTok Developer profile</span>
+    </footer>
   </body>
 </html>
